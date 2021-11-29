@@ -2,15 +2,25 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+} 
+
+body{
+    background-image: url(./Assets/abogados.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    
 }
 
 .menu {
-    background: #b7b7a4;
+    background: #000;
     height: 75px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 
 }
 
@@ -18,7 +28,7 @@
     width: 150px;
 }
 
-.menu_items{
+ .menu_items{
     display: flex;
     list-style: none;
     margin-right: 20px;
@@ -33,13 +43,24 @@
 .menu_items li a {
     padding: 7px 13px;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #666;
+    color: #fff;
     border-radius: 10px;
 }
 
 .menu_items li a:hover {
     background-color: #6b705c80;
     transition: 4s;
+     
+} 
+
+#acerca{
+    margin-top: 0px;
+
+}
     
+
+
+#contacto{
+    padding: 100px;
+    background-color: #fff;
 } 
