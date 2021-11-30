@@ -5,62 +5,126 @@
 } 
 
 body{
-    background-image: url(./Assets/abogados.jpg);
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url(./Assets/abogados.jpg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 375px;
     height: 100px;
-    background-size: cover;
+    background-size: cover; */
     
 }
 
 .menu {
-    background: #000;
+    background: transparent;
     height: 75px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: fixed;
-
 }
 
+
+
 .logo {
-    width: 150px;
+    width: 80px;
 }
 
  .menu_items{
     display: flex;
     list-style: none;
-    margin-right: 20px;
 
 }
 
 .menu_items li {
     border-radius: 10px;
-    margin: 0 5px;
 }
 
 .menu_items li a {
-    padding: 7px 13px;
+    padding: 7px 5px;
     text-decoration: none;
-    color: #fff;
+    color: #2f3e46;
     border-radius: 10px;
 }
 
 .menu_items li a:hover {
-    background-color: #6b705c80;
-    transition: 4s;
-     
+    background-color: #52796f;
+    transition: 2s;
+      
 } 
 
-#acerca{
-    margin-top: 0px;
-
+span{
+    font-weight: bolder;
 }
-    
+
+h2{
+    margin: 100px 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #52796f ;
+}
+
+.contenido{
+    display: flex;
+    margin: 0 10px;
+    line-height: 30px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]{
+    padding: 30px 0;
+    border: 1px solid #cad2c5 ;
+    border-left: none;
+    border-right: none;
+}
+
+input[type=number]{
+    padding: 30px 0;
+    border: 1px solid #cad2c5 ;
+    border-left: none;
+    border-right: none;
+}
+
+input[type=email]{
+    padding: 30px 0;
+    border: 1px solid #cad2c5 ;
+    border-left: none;
+    border-right: none;
+}
+
+textarea{
+    padding: 30px 0;
+    border: 1px solid #cad2c5 ;
+    border-left: none;
+    border-right: none;
+}
 
 
-#contacto{
-    padding: 100px;
-    background-color: #fff;
-} 
+input, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+  }
+
+  button{
+      width: 30%;
+      margin: 50px 30px;
+      padding: 20px;
+      background-color: transparent;
+      border: 1px solid #000 ;
+      border-radius: 10px;
+      font-family: inherit;
+      font-weight: 900;
+      
+
+  }
