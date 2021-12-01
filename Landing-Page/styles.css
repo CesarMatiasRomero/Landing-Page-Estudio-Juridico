@@ -6,30 +6,28 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    /* background-image: url(./Assets/abogados.jpg);
+    background-image: url(./Assets/abogados-mobile.jpg);
     background-repeat: no-repeat;
-    width: 375px;
-    height: 100px;
-    background-size: cover; */
-    
+    background-position: center 1.5%;
 }
 
 .menu {
-    background: transparent;
+    background: #52796f;
     height: 75px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
 }
-
-
 
 .logo {
     width: 80px;
+    float: right;
+    margin-top: -10px;
+    
 }
 
- .menu_items{
+/* .menu_items{
     display: flex;
     list-style: none;
 
@@ -37,20 +35,20 @@ body{
 
 .menu_items li {
     border-radius: 10px;
+   
 }
 
 .menu_items li a {
     padding: 7px 5px;
     text-decoration: none;
-    color: #2f3e46;
     border-radius: 10px;
 }
 
 .menu_items li a:hover {
     background-color: #52796f;
-    transition: 2s;
-      
-} 
+    transition: 2s; 
+       
+} */
 
 span{
     font-weight: bolder;
@@ -62,6 +60,10 @@ h2{
     font-weight: bolder;
     font-size: 2rem;
     color: #52796f ;
+}
+
+#acerca h2{
+    margin-top: 300px;
 }
 
 .contenido{
@@ -89,12 +91,6 @@ input[type=text]{
     border-right: none;
 }
 
-input[type=number]{
-    padding: 30px 0;
-    border: 1px solid #cad2c5 ;
-    border-left: none;
-    border-right: none;
-}
 
 input[type=email]{
     padding: 30px 0;
@@ -127,4 +123,47 @@ input, textarea {
       font-weight: 900;
       
 
+  }
+
+
+
+  ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block; 
+  }
+
+  #inicio input{
+      display: none;
+  }
+
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  li {
+    display: block;
+    background: #52796f;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+
+  li a{
+      color: #fafafa;
+      text-decoration: none;
   }
