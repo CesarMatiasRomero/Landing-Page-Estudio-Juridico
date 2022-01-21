@@ -19,9 +19,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center; */
+   
 }
 
 .logo {
@@ -31,28 +29,35 @@ body{
     
 }
 
-/* .menu_items{
-    display: flex;
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+li {
+    display: block;
+    background: #52796f;
+    margin: 0;
+    padding: 10px;
     list-style: none;
+    border-bottom: 1px solid grey;
 
-}
+  }
 
-.menu_items li {
-    border-radius: 10px;
-   
-}
-
-.menu_items li a {
-    padding: 7px 5px;
+li a{
+    color: #fafafa;
     text-decoration: none;
-    border-radius: 10px;
-}
-
-.menu_items li a:hover {
-    background-color: #52796f;
-    transition: 2s; 
-       
-} */
+  }
 
 span{
     font-weight: bolder;
@@ -90,6 +95,10 @@ h2{
 .form{
     display: flex;
     flex-direction: column;
+}
+
+input[type=checkbox]{
+    display: none;
 }
 
 input[type=text]{
@@ -149,46 +158,15 @@ button:active {
         top: 2px;
 }
 
-  ul{
+ul{
     display: none;
-  }
+}
   
-  input:checked  ~ ul{
+input:checked  ~ ul{
     display:block; 
-  }
+}
 
-  #inicio input{
-      display: none;
-  }
-
-  label {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 40px;
-    height: 30px;
-    line-height: 35px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-
-  li {
-    display: block;
-    background: #52796f;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
-  }
-
-  li a{
-      color: #fafafa;
-      text-decoration: none;
-  }
+  
 
   @media only screen and (min-width: 768px){
 
